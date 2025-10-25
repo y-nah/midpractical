@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Introduction to Git</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      .glow-box {
+        transition: all 0.3s ease-in-out;
+      }
+      .glow-box:hover {
+        box-shadow: 0 0 25px 6px rgba(244, 114, 182, 0.6);
+        background-color: rgba(244, 114, 182, 0.1);
+        transform: translateY(-4px);
+      }
+    </style>
+  </head>
+
+  <body class="p-16 bg-gray-900 text-white leading-relaxed space-y-12">
+    <a
+      href="index.html"
+      class="inline-block mb-6 px-4 py-2 bg-grey-700 text-white font-semibold rounded-lg shadow hover:bg-pink-500 transition"
+    >
+      &larr; Back
+    </a>
+    <header class="text-center" data-aos="fade-up" data-aos-delay="0">
+      <h1 class="text-4xl font-bold mb-2">Git Essentials</h1>
+      <p class="text-gray-400 text-lg">
+        Version Control System for Tracking Code
+      </p>
+    </header>
+
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <h2 class="text-2xl font-semibold mb-2">What is Git?</h2>
+      <p>
+        Git is a distributed version control system used to track changes in
+        source code during software development. It helps teams collaborate
+        efficiently.
+      </p>
+    </section>
+
+    <!-- Git Concepts -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Key Concepts</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>
+            <strong>Repository (Repo):</strong> Storage for your project and its
+            history
+          </li>
+          <li><strong>Commit:</strong> Snapshot of changes</li>
+          <li><strong>Branch:</strong> Separate line of development</li>
+          <li><strong>Merge:</strong> Combine branches</li>
+          <li><strong>Remote:</strong> A hosted repository (e.g., GitHub)</li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Git Workflow</h2>
+        <p>The common Git workflow:</p>
+        <ol class="list-decimal ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>Clone repository</li>
+          <li>Create a branch</li>
+          <li>Make changes and commit</li>
+          <li>Push branch to remote</li>
+          <li>Create pull request and merge</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Common Commands -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Common Git Commands</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li><code>git init</code> - Initialize a new repository</li>
+          <li><code>git clone [url]</code> - Copy a repository</li>
+          <li><code>git status</code> - Check changes</li>
+          <li><code>git add [file]</code> - Stage changes</li>
+          <li><code>git commit -m "message"</code> - Save snapshot</li>
+          <li><code>git push</code> - Send changes to remote</li>
+          <li><code>git pull</code> - Fetch changes from remote</li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Branching & Merging</h2>
+        <p>
+          Branching allows separate development. Merging integrates changes
+          back:
+        </p>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li><code>git branch [name]</code> - Create a branch</li>
+          <li><code>git checkout [name]</code> - Switch branch</li>
+          <li><code>git merge [branch]</code> - Merge a branch into current</li>
+          <li><code>git log</code> - View commit history</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Remote Repositories -->
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      <h2 class="text-2xl font-semibold mb-2">Remote Repositories</h2>
+      <p>
+        Remote repositories like GitHub, GitLab, or Bitbucket store your project
+        online. You can push local changes, collaborate, and track history.
+      </p>
+      <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+        <li>
+          <code>git remote add origin [url]</code> - Link local repo to remote
+        </li>
+        <li><code>git push -u origin main</code> - Push initial commit</li>
+        <li><code>git pull</code> - Fetch and merge remote changes</li>
+      </ul>
+    </section>
+
+    <!-- Git Best Practices -->
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box"
+      data-aos="fade-up"
+      data-aos-delay="700"
+    >
+      <h2 class="text-2xl font-semibold mb-2">Git Best Practices</h2>
+      <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+        <li>Commit often with meaningful messages</li>
+        <li>Use branches for new features or fixes</li>
+        <li>Pull latest changes before starting work</li>
+        <li>Review pull requests carefully</li>
+        <li>Keep repository clean and organized</li>
+      </ul>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: false,
+      });
+    </script>
+  </body>
+</html>

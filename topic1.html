@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Reference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="p-16 bg-gray-800 text-white">
+    <a
+      href="index.html"
+      class="inline-block mb-6 px-4 py-2 bg-grey-700 text-white font-semibold rounded-lg shadow hover:bg-pink-500 transition"
+    >
+      &larr; Back
+    </a>
+    <h1 class="text-center text-4xl font-bold mb-8">
+      Basic HTML Tags Reference
+    </h1>
+    <p class="text-center mb-12 text-gray-300">
+      A simple guide to essential HTML tags, their usage, and examples.
+    </p>
+
+    <div
+      class="max-w-6xl mx-auto bg-gray-900 p-8 rounded-2xl shadow-lg overflow-x-auto"
+    >
+      <table class="min-w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b border-gray-700 text-gray-300">
+            <th class="px-4 py-2">Tag Name</th>
+            <th class="px-4 py-2">Description</th>
+            <th class="px-4 py-2">Code Example</th>
+            <th class="px-4 py-2">Rendered Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Document Structure -->
+          <tr class="bg-gray-700">
+            <td colspan="4" class="px-4 py-2 font-bold text-white">
+              Document Structure
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;!DOCTYPE html&gt;</td>
+            <td class="px-4 py-2">Defines HTML5 document type</td>
+            <td class="px-4 py-2">&lt;!DOCTYPE html&gt;</td>
+            <td class="px-4 py-2 text-gray-400 italic">No visible output</td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;html&gt;</td>
+            <td class="px-4 py-2">Root of the document</td>
+            <td class="px-4 py-2">&lt;html&gt;...&lt;/html&gt;</td>
+            <td class="px-4 py-2 text-gray-400 italic">
+              Wraps all HTML content
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;head&gt;</td>
+            <td class="px-4 py-2">Contains metadata and links</td>
+            <td class="px-4 py-2">&lt;head&gt;...&lt;/head&gt;</td>
+            <td class="px-4 py-2 text-gray-400 italic">Not visible in page</td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;title&gt;</td>
+            <td class="px-4 py-2">Browser tab title</td>
+            <td class="px-4 py-2">&lt;title&gt;My Page&lt;/title&gt;</td>
+            <td class="px-4 py-2 text-gray-400 italic">
+              Appears on browser tab
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;body&gt;</td>
+            <td class="px-4 py-2">Visible page content</td>
+            <td class="px-4 py-2">&lt;body&gt;...&lt;/body&gt;</td>
+            <td class="px-4 py-2">Everything you see here 👀</td>
+          </tr>
+
+          <!-- Text & Content -->
+          <tr class="bg-gray-700">
+            <td colspan="4" class="px-4 py-2 font-bold text-white">
+              Text & Content
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;h1&gt;–&lt;h6&gt;</td>
+            <td class="px-4 py-2">Headings (largest to smallest)</td>
+            <td class="px-4 py-2">&lt;h2&gt;Heading&lt;/h2&gt;</td>
+            <td class="px-4 py-2">
+              <h2 class="text-lg font-semibold">Heading</h2>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;p&gt;</td>
+            <td class="px-4 py-2">Paragraph text</td>
+            <td class="px-4 py-2">&lt;p&gt;Hello World&lt;/p&gt;</td>
+            <td class="px-4 py-2"><p>Hello World</p></td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;br&gt;</td>
+            <td class="px-4 py-2">Line break</td>
+            <td class="px-4 py-2">Line1&lt;br&gt;Line2</td>
+            <td class="px-4 py-2">Line1<br />Line2</td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;strong&gt;</td>
+            <td class="px-4 py-2">Bold text</td>
+            <td class="px-4 py-2">&lt;strong&gt;Bold&lt;/strong&gt;</td>
+            <td class="px-4 py-2"><strong>Bold</strong></td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;em&gt;</td>
+            <td class="px-4 py-2">Italic text</td>
+            <td class="px-4 py-2">&lt;em&gt;Italic&lt;/em&gt;</td>
+            <td class="px-4 py-2"><em>Italic</em></td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;a&gt;</td>
+            <td class="px-4 py-2">Hyperlink</td>
+            <td class="px-4 py-2">
+              &lt;a href="https://example.com"&gt;Visit&lt;/a&gt;
+            </td>
+            <td class="px-4 py-2">
+              <a href="https://example.com" class="text-pink-400 underline"
+                >Visit</a
+              >
+            </td>
+          </tr>
+
+          <!-- IMG TAG (updated) -->
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;img&gt;</td>
+            <td class="px-4 py-2">Displays image</td>
+            <td class="px-4 py-2">&lt;img src="cat.jpg" alt="Cat Meme"&gt;</td>
+            <td class="px-4 py-2">
+              <a
+                href="https://www.reddit.com/r/CatsBeingCats/comments/1gcdg7h/show_me_your_fav_cat_meme/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://i.pinimg.com/736x/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg"
+                  alt="Cat Meme"
+                  class="rounded-xl shadow-[0_0_15px_#ec4899] w-64 hover:scale-110 transition-transform duration-300"
+                />
+              </a>
+            </td>
+          </tr>
+
+          <!-- Lists -->
+          <tr class="bg-gray-700">
+            <td colspan="4" class="px-4 py-2 font-bold text-white">Lists</td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;ul&gt;</td>
+            <td class="px-4 py-2">Unordered (bulleted) list</td>
+            <td class="px-4 py-2">
+              &lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;
+            </td>
+            <td class="px-4 py-2">
+              <ul class="list-disc ml-5">
+                <li>Item</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;ol&gt;</td>
+            <td class="px-4 py-2">Ordered (numbered) list</td>
+            <td class="px-4 py-2">
+              &lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;/ol&gt;
+            </td>
+            <td class="px-4 py-2">
+              <ol class="list-decimal ml-5">
+                <li>First</li>
+              </ol>
+            </td>
+          </tr>
+
+          <!-- Layout -->
+          <tr class="bg-gray-700">
+            <td colspan="4" class="px-4 py-2 font-bold text-white">
+              Layout & Structure
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;div&gt;</td>
+            <td class="px-4 py-2">Generic container block</td>
+            <td class="px-4 py-2">&lt;div&gt;Box&lt;/div&gt;</td>
+            <td class="px-4 py-2">
+              <div class="bg-gray-700 p-2 rounded">Box</div>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;span&gt;</td>
+            <td class="px-4 py-2">Inline container</td>
+            <td class="px-4 py-2">&lt;span&gt;Text&lt;/span&gt;</td>
+            <td class="px-4 py-2"><span class="text-pink-300">Text</span></td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;header&gt;</td>
+            <td class="px-4 py-2">Top section or heading</td>
+            <td class="px-4 py-2">&lt;header&gt;Welcome&lt;/header&gt;</td>
+            <td class="px-4 py-2">
+              <header class="bg-gray-700 p-1 rounded">Welcome</header>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;footer&gt;</td>
+            <td class="px-4 py-2">Bottom section</td>
+            <td class="px-4 py-2">&lt;footer&gt;Footer Text&lt;/footer&gt;</td>
+            <td class="px-4 py-2">
+              <footer class="text-sm text-gray-400">Footer Text</footer>
+            </td>
+          </tr>
+
+          <!-- Tables -->
+          <tr class="bg-gray-700">
+            <td colspan="4" class="px-4 py-2 font-bold text-white">Tables</td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;table&gt;</td>
+            <td class="px-4 py-2">Defines a table</td>
+            <td class="px-4 py-2">&lt;table&gt;...&lt;/table&gt;</td>
+            <td class="px-4 py-2">
+              <table class="border border-gray-600">
+                <tr>
+                  <th class="border px-1">H</th>
+                  <td class="border px-1">D</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Forms -->
+          <tr class="bg-gray-700">
+            <td colspan="4" class="px-4 py-2 font-bold text-white">
+              Forms & Inputs
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;form&gt;</td>
+            <td class="px-4 py-2">Form container</td>
+            <td class="px-4 py-2">&lt;form&gt;...&lt;/form&gt;</td>
+            <td class="px-4 py-2">
+              <form class="space-y-1">
+                <label>Name:</label><br />
+                <input
+                  type="text"
+                  placeholder="Enter name"
+                  class="bg-gray-700 px-2 rounded"
+                />
+              </form>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;input&gt;</td>
+            <td class="px-4 py-2">User input field</td>
+            <td class="px-4 py-2">&lt;input type="text"&gt;</td>
+            <td class="px-4 py-2">
+              <input
+                type="text"
+                placeholder="Text"
+                class="bg-gray-700 px-2 rounded"
+              />
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;button&gt;</td>
+            <td class="px-4 py-2">Clickable button</td>
+            <td class="px-4 py-2">&lt;button&gt;Click&lt;/button&gt;</td>
+            <td class="px-4 py-2">
+              <button class="bg-blue-500 px-2 py-1 rounded">Click</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-800">
+            <td class="px-4 py-2">&lt;label&gt;</td>
+            <td class="px-4 py-2">Label for input</td>
+            <td class="px-4 py-2">&lt;label&gt;Name:&lt;/label&gt;</td>
+            <td class="px-4 py-2"><label>Name:</label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

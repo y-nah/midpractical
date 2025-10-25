@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Introduction to Tailwind CSS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      .glow-box {
+        transition: all 0.3s ease-in-out;
+      }
+      .glow-box:hover {
+        box-shadow: 0 0 25px 6px rgba(244, 114, 182, 0.6);
+        background-color: rgba(244, 114, 182, 0.1);
+        transform: translateY(-4px);
+      }
+    </style>
+  </head>
+
+  <body class="p-16 bg-gray-900 text-white leading-relaxed space-y-12">
+    <a
+      href="index.html"
+      class="inline-block mb-6 px-4 py-2 bg-grey-600 text-white font-semibold rounded-lg shadow hover:bg-pink-500 transition"
+    >
+      &larr; Back
+    </a>
+
+    <header class="text-center" data-aos="fade-up" data-aos-delay="0">
+      <h1 class="text-4xl font-bold mb-2">Design with Tailwind</h1>
+      <p class="text-gray-400 text-lg">Utility-First CSS Framework</p>
+    </header>
+
+    <!-- What is Tailwind -->
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <h2 class="text-2xl font-semibold mb-2">What is Tailwind CSS?</h2>
+      <p>
+        Tailwind CSS is a utility-first CSS framework for rapidly building
+        custom designs. Instead of writing custom CSS, you use pre-defined
+        utility classes directly in HTML.
+      </p>
+    </section>
+
+    <!-- Tailwind Concepts -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Core Concepts</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>
+            <strong>Utility Classes:</strong> Predefined CSS classes for
+            spacing, colors, typography, etc.
+          </li>
+          <li>
+            <strong>Responsive Design:</strong> Use breakpoints like
+            <code>sm:</code>, <code>md:</code>, <code>lg:</code>
+          </li>
+          <li>
+            <strong>Variants:</strong> Hover, focus, dark mode, active, etc.
+          </li>
+          <li>
+            <strong>Customization:</strong> Extend default Tailwind in
+            <code>tailwind.config.js</code>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Tailwind Workflow</h2>
+        <p>How to use Tailwind in projects:</p>
+        <ol class="list-decimal ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>Install Tailwind via npm or CDN</li>
+          <li>
+            Add <code>@tailwind base;</code>,
+            <code>@tailwind components;</code>,
+            <code>@tailwind utilities;</code> in CSS
+          </li>
+          <li>Use utility classes in HTML</li>
+          <li>Build/compile CSS for production</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Common Classes -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Common Utility Classes</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>
+            Spacing: <code>p-4</code>, <code>m-2</code>, <code>mx-auto</code>
+          </li>
+          <li>
+            Colors: <code>bg-blue-500</code>, <code>text-white</code>,
+            <code>hover:bg-indigo-600</code>
+          </li>
+          <li>
+            Typography: <code>font-bold</code>, <code>text-xl</code>,
+            <code>uppercase</code>
+          </li>
+          <li>
+            Flex & Grid: <code>flex</code>, <code>justify-center</code>,
+            <code>grid grid-cols-3</code>
+          </li>
+          <li>
+            Effects: <code>shadow-lg</code>, <code>rounded-xl</code>,
+            <code>hover:scale-105</code>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box overflow-x-auto"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Responsive & Variants</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>
+            Breakpoints: <code>sm:</code>, <code>md:</code>, <code>lg:</code>,
+            <code>xl:</code>
+          </li>
+          <li>Hover: <code>hover:bg-red-500</code></li>
+          <li>Focus: <code>focus:ring-2</code></li>
+          <li>Dark mode: <code>dark:bg-gray-800</code></li>
+          <li>Active: <code>active:scale-95</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Tailwind Best Practices -->
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      <h2 class="text-2xl font-semibold mb-2">Best Practices</h2>
+      <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+        <li>Use utility classes instead of custom CSS for speed</li>
+        <li>Keep HTML readable and structured</li>
+        <li>Use responsive design utilities</li>
+        <li>Leverage variants like hover, focus, dark mode</li>
+        <li>Use <code>@apply</code> in custom CSS if needed</li>
+      </ul>
+    </section>
+
+    <!-- Example Grid -->
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box space-y-6"
+      data-aos="fade-up"
+      data-aos-delay="700"
+    >
+      <h2 class="text-2xl font-semibold text-center">Example: Tailwind Grid</h2>
+      <p>Tailwind makes building responsive grids simple using utilities:</p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-indigo-500 p-4 rounded text-center">Grid Item 1</div>
+        <div class="bg-indigo-600 p-4 rounded text-center">Grid Item 2</div>
+        <div class="bg-indigo-700 p-4 rounded text-center">Grid Item 3</div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: false,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Introduction to CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .glow-box {
+        transition: all 0.3s ease-in-out;
+      }
+      .glow-box:hover {
+        box-shadow: 0 0 25px 6px rgba(244, 114, 182, 0.6);
+        background-color: rgba(244, 114, 182, 0.1); /* light pink tint */
+        transform: translateY(-4px);
+      }
+    </style>
+  </head>
+  <body class="p-16 bg-gray-900 text-white leading-relaxed space-y-12">
+    <a
+      href="index.html"
+      class="inline-block mb-6 px-4 py-2 bg-grey-700 text-white font-semibold rounded-lg shadow hover:bg-pink-500 transition"
+    >
+      &larr; Back
+    </a>
+    <header class="text-center" data-aos="fade-up" data-aos-delay="0">
+      <h1 class="text-4xl font-bold mb-2">Introduction to CSS</h1>
+      <p class="text-gray-400 text-lg">Cascading Style Sheets (CSS)</p>
+    </header>
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
+        <p>
+          CSS is a language used to describe how HTML elements should look on a
+          web page. It controls the style of a website, such as:
+        </p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Colors</li>
+          <li>Fonts</li>
+          <li>Layout</li>
+          <li>Spacing</li>
+          <li>Animations</li>
+        </ul>
+      </div>
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h2 class="text-2xl font-semibold mb-2">What is "The Cascade"?</h2>
+        <p>
+          The cascade determines which style rules are applied when multiple
+          rules target the same element. It depends on rule origin
+          (author/user/agent), specificity (inline, id, class, element) and the
+          order of rules.
+        </p>
+      </div>
+    </section>
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      <h2 class="text-2xl font-semibold mb-2">Concepts</h2>
+      <p>
+        Specificity in CSS determines which rule wins when multiple rules target
+        the same element. Each type of selector has a point value. The more
+        specific the selector, the higher its score.
+      </p>
+    </section>
+    <!-- Syntax + Parts table -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <h2 class="text-2xl font-semibold mb-2">CSS Syntax</h2>
+        <p>
+          A CSS rule consists of a <strong>selector</strong> and a
+          <strong>declaration block</strong>:
+        </p>
+        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">
+ selector { property: value; }</pre
+        >
+      </div>
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box overflow-x-auto"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <h3 class="text-xl font-semibold mb-2">Parts of a Syntax</h3>
+        <table class="w-full text-sm border border-gray-600">
+          <thead class="bg-gray-700">
+            <tr>
+              <th class="border border-gray-600 px-4 py-2 text-left">Part</th>
+              <th class="border border-gray-600 px-4 py-2 text-left">
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">Selector</td>
+              <td class="border border-gray-600 px-4 py-2">
+                Specifies which HTML elements to style (e.g., p, .class, #id)
+              </td>
+            </tr>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Property</td>
+              <td class="border border-gray-600 px-4 py-2">
+                The aspect to change (color, font-size)
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">Value</td>
+              <td class="border border-gray-600 px-4 py-2">
+                The setting for the property (red, 16px)
+              </td>
+            </tr>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Declaration</td>
+              <td class="border border-gray-600 px-4 py-2">
+                A property + value pair (color: red;)
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">
+                Declaration Block
+              </td>
+              <td class="border border-gray-600 px-4 py-2">
+                One or more declarations inside { ... }
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Categories + examples -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box"
+        data-aos="fade-up"
+        data-aos-delay="600"
+      >
+        <h2 class="text-2xl font-semibold mb-2">
+          Common Categories of CSS Properties
+        </h2>
+        <p>
+          Groupings include text, box model, background, layout, flexbox/grid,
+          animation, and visibility/effects.
+        </p>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>Text: color, font-size, line-height, text-align</li>
+          <li>Box model: margin, padding, border, width, height</li>
+          <li>
+            Background: background-color, background-image, background-position
+          </li>
+          <li>Layout: display, position, float, grid, flex</li>
+          <li>Animation: transition, animation</li>
+        </ul>
+      </div>
+      <div
+        class="bg-gray-800 p-6 rounded-2xl glow-box overflow-x-auto"
+        data-aos="fade-up"
+        data-aos-delay="700"
+      >
+        <h3 class="text-xl font-semibold mb-2">Examples Table</h3>
+        <table class="w-full text-sm border border-gray-600">
+          <thead class="bg-gray-700">
+            <tr>
+              <th class="border border-gray-600 px-4 py-2 text-left">
+                Category
+              </th>
+              <th class="border border-gray-600 px-4 py-2 text-left">
+                Example Properties
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Text</td>
+              <td class="border border-gray-600 px-4 py-2">
+                color, font-family, font-size, text-align
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">Box Model</td>
+              <td class="border border-gray-600 px-4 py-2">
+                margin, padding, border, width, height
+              </td>
+            </tr>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Background</td>
+              <td class="border border-gray-600 px-4 py-2">
+                background-color, background-image
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">Layout</td>
+              <td class="border border-gray-600 px-4 py-2">
+                display, position, grid, flex
+              </td>
+            </tr>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Animation</td>
+              <td class="border border-gray-600 px-4 py-2">
+                transition, animation
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- CSS Properties -->
+    <section
+      class="grid md:grid-cols-2 gap-8"
+      data-aos="fade-up"
+      data-aos-delay="800"
+    >
+      <div class="bg-gray-800 p-6 rounded-2xl glow-box">
+        <h2 class="text-2xl font-semibold mb-2 text-center">CSS Properties</h2>
+        <p class="text-center text-gray-300">
+          Common properties used to style elements.
+        </p>
+        <ul class="list-disc ml-6 mt-2 space-y-1 text-sm text-gray-300">
+          <li>Color, background-color</li>
+          <li>Font-related: font-size, font-weight, font-style</li>
+          <li>Display & layout: display, grid, flex</li>
+          <li>Positioning: static, relative, absolute, fixed, sticky</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl glow-box overflow-x-auto">
+        <h3 class="text-xl font-semibold mb-2">Property Table</h3>
+        <table class="w-full text-sm border border-gray-600">
+          <tbody>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Color</td>
+              <td class="border border-gray-600 px-4 py-2">
+                red, blue, green, black, white
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">Display / Layout</td>
+              <td class="border border-gray-600 px-4 py-2">
+                block, inline, flex, grid
+              </td>
+            </tr>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Positioning</td>
+              <td class="border border-gray-600 px-4 py-2">
+                static, relative, absolute, fixed, sticky
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-600 px-4 py-2">Font / Style</td>
+              <td class="border border-gray-600 px-4 py-2">
+                bold, italic, uppercase
+              </td>
+            </tr>
+            <tr class="bg-gray-700">
+              <td class="border border-gray-600 px-4 py-2">Units</td>
+              <td class="border border-gray-600 px-4 py-2">
+                px, em, rem, %, vh, vw, fr
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Grid System -->
+    <section
+      class="bg-gray-800 p-6 rounded-2xl glow-box space-y-6"
+      data-aos="fade-up"
+      data-aos-delay="900"
+    >
+      <h2 class="text-2xl font-semibold text-center">Grid System</h2>
+      <p>
+        A CSS Grid System is a layout method used to create web page layouts
+        based on rows and columns. It allows for precise control and responsive
+        designs.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="grid grid-cols-2 list-disc ml-6 gap-x-8 gap-y-1 text-sm">
+          <li>Grid Container</li>
+          <li>Grid Items</li>
+          <li>Grid Lines</li>
+          <li>Grid Tracks</li>
+          <li>Grid Cells</li>
+          <li>Grid Areas</li>
+          <li>Gaps (Gutters)</li>
+          <li>Nested Grids</li>
+          <li>Media Queries (Responsive Design)</li>
+        </ul>
+        <div class="bg-gray-900 p-4 rounded">
+          <p class="text-sm text-gray-300">
+            Use <code>display: grid;</code> on a container and define
+            columns/rows with <code>grid-template-columns</code> /
+            <code>grid-template-rows</code>. Combine with gaps and media queries
+            for responsive layouts.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 700, once: false });
+    </script>
+  </body>
+</html>
